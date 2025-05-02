@@ -110,7 +110,30 @@ header .menu {
         padding: 15px 20px;
     }
     header .navi {
-        display: none;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background: #212121;
+        color: #fff;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+    }
+
+    header .navi li {
+        padding: 20px 0;
+        margin: 0;
+        /* background: #999; */
+        transition: all 0.3s;
+    }
+
+    header .navi li:hover,
+    header .navi li.active {
+        _background: linear-gradient(45deg,  #97e031 0%,#b9fb05 48%,#e6fc55 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: #97e031;
+        color: #222;
     }
 
     header .menu {
